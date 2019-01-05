@@ -1,0 +1,59 @@
+.container{
+	width: 1000px;
+	height: 100%;
+}
+h1{
+	font-family: 'Cinzel', serif;
+	color: #060D35;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+}
+p{
+	font-family: 'Courgette', cursive;
+}
+img{
+	border-radius: 15px;
+	padding: 10px;
+}
+@media screen and (max-width: 999px){
+	.container{
+		width: 100%;
+	}
+	img{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 640px){
+	.container{
+		width: 100%;
+	}
+	.container img{
+		width: 100%;
+	}
+	#agenda{
+		width: 100%;
+	}
+	#speakers{
+		width: 100%;
+	}
+	#events .row .col-md-4{
+		width: 100%;
+	}
+	#workshop{
+		width: 100%;
+	}
+	#schedule img{
+		width: 100%;
+	}
+	#venue img{
+		width: 100%;
+	}
+	#partners img{
+		width: 100%;
+	}
+	
+}
