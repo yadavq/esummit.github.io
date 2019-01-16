@@ -3,17 +3,198 @@
 <head>
 	<title>E-SUMMIT</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link href="https://fonts.googleapis.com/css?family=Cinzel:900|Josefin+Sans|Courgette" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" media="screen" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Signika" rel="stylesheet">
 	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+   #nav {
+  position:absolute;
+  top: 5%;
+  left: 88%;
+  color: #fff;
+  z-index: 9999;
+  word-spacing: 10px;
+  
+}
 
+   #logo {
+  position:absolute;
+  top: 20%;
+  left: 21%;
+  color: #fff;
+  z-index: 9999;
+  
+}
+  #hello {
+  position:absolute;
+  top: 35%;
+  left: 38%;
+  color: #fff;
+  z-index: 9999;
+  word-spacing: 10px;
+ 
+}
+ #hi {
+  position:absolute;
+  top: 40%;
+  left: 30%;
+  color: #fff;
+  z-index: 9999;
+  word-spacing: 10px;
+  
+}
+
+
+#bye {
+  position:absolute;
+  top: 50%;
+  left: 39%;
+  color: #fff;
+  z-index: 9999;
+  word-spacing: 10px;
+}
+ #date {
+  position:absolute;
+  top: 60%;
+  left: 30%;
+  color: #fff;
+  z-index: 9999;
+  word-spacing: 10px;
+ 
+}
+.overlay {
+  height: 600px;
+  width: 300px;
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  margin-left: 1030px;
+  background-color: #343434;
+  
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 40%;
+  float: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #D23333;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #fff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  position:absolute;
+  z-index: 9999;
+ 
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #d11919;
+  color: white;
+  top: 30%;
+  left: 2%;
+}
+
+.fa-twitter {
+  background: #d11919;
+  color: white;
+  top: 45%;
+  left: 2%;
+}
+
+.fa-linkedin {
+  background: #d11919;
+  color: white;
+  top: 60%;
+  left: 2%;
+}
+
+.fa-instagram {
+  background: #d11919;
+  color: white;
+  top: 75%;
+  left: 2%;
+}
+
+</style>
 </head>
 <body>
 
+<div class="sticky">
+		<h5>Entrepreneurship Cell, HBTU </h5> 
+		<hr>
+		<a href="#agenda"><span id="navi">Agenda</span></a>
+		<a href="#speakers"><span style="color: #006A9C">Talks</span></a>
+		<a href="#events"><span>Events</span></a>
+		<a href="#workshop"><span style="color: #006A9C">Workshop</span></a>
+		<a href="#schedule"><span>Schedule</span></a>
+		<a href="#venue"><span style="color: #006A9C">Venue</span></a>
+		<a href="#partners"><span>Partners</span></a>
+		<a href="campus.html"><span style="color: #006A9C">Campus Ambassador Programs</span></a>
+</div>
+<div id="logo">
+	<img src="logo.png" height="400" width="780">
+</div>
+
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+
 <div class="container">
-	<img src="background.png">
+	
 	<div id="agenda">
-		<h1>Agenda</h1>
+		<strong><h1>AGENDA</h1></strong>
 		<h3>Frugality In Innovation</h3>
 		<p>#JUGAAD OR FRUGALITY IN INNOVATION Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -23,7 +204,7 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 	<div id="speakers">
-		<h1>Talks and Speakers</h1>
+		<strong><h1>TALKS AND SPEAKERS</h1></strong>
 		<div class="row">
 			<div class="col-md-4">
 				<img src="jitu.png">
@@ -82,7 +263,7 @@
 		</div>
 	</div>
 	<div id="events">
-		<h1>Events</h1>
+		<strong><h1>EVENTS</h1></strong>
 		<div class="row">
 			<div class="col-md-3">
 				<img src="event.png">	
@@ -195,10 +376,10 @@
 				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</div>
-		<button type="button" class="btn btn-primary btn-lg btn-block">Register For Events</button>
+		<a href="events.html"><button type="button" class="btn btn-primary btn-lg btn-block">Register For Events</button></a>
 	</div>
 	<div id="workshop">
-		<h1>Entrepreneurship Workshop</h1>
+		<strong><h1>ENTREPRENEURSHIP WORKSHOP</h1></strong>
 		<img src="Grassroots.png">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -206,14 +387,14 @@
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<button type="button" class="btn btn-primary btn-lg btn-block">Register For Workshop</button>
+		<a href="workshop.html"><button type="button" class="btn btn-primary btn-lg btn-block">Register For Workshop</button></a>
 	</div>
 	<br><br>
 	<div id="schedule">
 		<img src="schedule.png">
 	</div>
 	<br><br>
-	<div class="venue">
+	<div id="venue">
 		<img src="venue.png">
 	</div>
 	<br><br>
@@ -225,7 +406,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	
+	<script type="text/javascript" src="index.js"></script>
 	
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="indes.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	
+				<div class="form" id="register">
+					<h2> Login Here </h2>
+					<div class="form-group">
+						<label> E-Mail</label>
+						<input type="text" id="email" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label> Password</label>
+						<input type="password" id="password" class="form-control" required>
+					</div>
+					<button type="submit" class="btn btn-primary" onclick="login()">LogIn</button>
+					<h5 onclick="createNew()">Create Account</h5>
+				</div>	
+
+				<div class="form" id="registerpage">
+					<h2> Register Here </h2>
+					<div class="form-group">
+						<label> Name</label>
+						<input type="text" id="name" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label> E-Mail</label>
+						<input type="text" id="email_create" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label> College</label>
+						<input type="text" id="college" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label> Phone</label>
+						<input type="text" id="phone" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label> Password</label>
+						<input type="password" id="password_create" class="form-control" required>
+					</div>
+					<button type="submit" class="btn btn-primary" onclick="create()">Register</button>
+				</div>
+
+				<div class="loginpage" id="main">
+					<p id="status" onclick="status()"></p>
+					<p id="logout" onclick="logout()"></p>
+					<h2>Register to Events </h2>
+					<p id ="user"></p>
+					<button type="submit" class="btn btn-primary" value="event1" onclick="check()">Event 1</button><br><br>
+					<button type="submit" class="btn btn-primary" value="event2" onclick="event2_registration()">Event 2</button>
+				</div>	
+				<div class="confirm" id="confirm">
+					<p>Please Confirm Your Email</p>
+					<p id="logout" onclick="logout()"></p>
+				</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDyedg-l2AF38qcPXuVg7Q0gIzhVD7dp0k",
+    authDomain: "testing-ed42f.firebaseapp.com",
+    databaseURL: "https://testing-ed42f.firebaseio.com",
+    projectId: "testing-ed42f",
+    storageBucket: "",
+    messagingSenderId: "358650113315"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
